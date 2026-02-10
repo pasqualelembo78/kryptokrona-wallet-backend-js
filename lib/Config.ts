@@ -269,7 +269,7 @@ export class Config implements IConfig {
     /**
      * How often to process blocks, in millseconds
      */
-    public syncThreadInterval: number = 100;
+    public syncThreadInterval: number = 250;
 
     /**
      * How often to update the daemon info
@@ -286,7 +286,7 @@ export class Config implements IConfig {
      * high a value will cause the event loop to be blocked, and your interaction
      * to be laggy.
      */
-    public blocksPerTick: number = 20;
+    public blocksPerTick: number = 10;
 
     /**
      * Your coins 'ticker', generally used to refer to the coin, i.e. 123 TRTL
@@ -303,12 +303,12 @@ export class Config implements IConfig {
      * Only some applications need to scan pool transactions
      *
      */
-    public scanPoolTransactions: boolean = true;
+    public scanPoolTransactions: boolean = false;
 
     /**
      * The minimum fee allowed for transactions, in ATOMIC units
      */
-    public minimumFee: number = 10;
+    public minimumFee: number = 0;
 
     /* Fee per byte is rounded up in chunks. This helps makes estimates
      * more accurate. It's suggested to make this a power of two, to relate
