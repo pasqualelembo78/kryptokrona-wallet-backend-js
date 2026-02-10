@@ -21,7 +21,7 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@ledgerhq/hw-transport": "^6.31.4",
-    "axios": "^1.7.9",
+    "axios": "^0.27.2",
     "kryptokrona-utils": "git+https://github.com/pasqualelembo78/kryptokrona-utils.git",
     "lodash": "^4.17.15",
     "object-sizeof": "^1.5.2",
